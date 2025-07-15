@@ -1,0 +1,10 @@
+<odoo>
+  <template id="chart_dashboard_template" name="Chart Dashboard">
+    <t t-call="web.layout">
+      <t t-call-assets="web.assets_frontend" t-js="true"/>
+      <div class="container py-4">
+        <div id="chart_dashboard_app"></div>
+      </div>
+    </t>
+  </template>
+</odoo>

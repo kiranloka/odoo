@@ -1,0 +1,7 @@
+<odoo>
+  <record id="action_retail_dashboard" model="ir.actions.act_url">
+    <field name="name">Retail Dashboard</field>
+    <field name="url">/retail/dashboard</field>
+    <field name="target">self</field>
+  </record>
+</odoo>

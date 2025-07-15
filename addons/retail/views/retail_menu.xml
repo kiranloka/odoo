@@ -1,0 +1,11 @@
+<odoo>
+  <!-- Top-level menu -->
+  <menuitem id="menu_retail_root" name="Retail" sequence="10"/>
+
+  <!-- Submenu for dashboard -->
+  <menuitem id="menu_retail_dashboard"
+            name="Dashboard"
+            parent="menu_retail_root"
+            action="action_retail_dashboard"
+            sequence="20"/>
+</odoo>

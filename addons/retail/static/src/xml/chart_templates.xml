@@ -1,0 +1,30 @@
+<odoo>
+  <template id="retail_dashboard_template" name="Retail Dashboard Template">
+    <t t-name="retail.Dashboard">
+      <div class="p-4">
+        <h2>Chart Dashboard</h2>
+        <div class="row">
+          <t t-component="retail.ChartCard" t-props='{"name": "Sales", "config": chartConfigs.sales}' />
+          <t t-component="retail.ChartCard" t-props='{"name": "Revenue", "config": chartConfigs.revenue}' />
+          <t t-component="retail.ChartCard" t-props='{"name": "Growth", "config": chartConfigs.growth}' />
+          <t t-component="retail.ChartCard" t-props='{"name": "Users", "config": chartConfigs.users}' />
+          <t t-component="retail.ChartCard" t-props='{"name": "Profit", "config": chartConfigs.profit}' />
+          <t t-component="retail.ChartCard" t-props='{"name": "Expenses", "config": chartConfigs.expenses}' />
+        </div>
+      </div>
+    </t>
+  </template>
+
+  <template id="retail_chartcard_template" name="Retail ChartCard Template">
+    <t t-name="retail.ChartCard">
+      <div class="col-md-6 mb-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h5 class="card-title"><t t-esc="props.name" /></h5>
+            <canvas t-att-id="canvasId"></canvas>
+          </div>
+        </div>
+      </div>
+    </t>
+  </template>
+</odoo>
